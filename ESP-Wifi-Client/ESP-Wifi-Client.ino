@@ -12,11 +12,10 @@ IPAddress subnet(255, 255, 255, 0);
 
 WebServer server(80);
 
-uint8_t pin_LED = 4;
+uint8_t pin_LED = LED_BUILTIN;
 bool LED_status = LOW;
 
-uint8_t LED2pin = 5;
-bool LED2status = LOW;
+
 
 void setup() {
   Serial.begin(115200);
