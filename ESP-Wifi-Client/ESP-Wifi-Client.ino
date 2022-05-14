@@ -15,12 +15,9 @@ WebServer server(80);
 uint8_t pin_LED = LED_BUILTIN;
 bool LED_status = LOW;
 
-
-
 void setup() {
   Serial.begin(115200);
   pinMode(pin_LED, OUTPUT);
-  pinMode(LED2pin, OUTPUT);
 
   WiFi.softAP(ssid, password);
   WiFi.softAPConfig(local_ip, gateway, subnet);
